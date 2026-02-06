@@ -43,6 +43,11 @@ jobs:
         working-directory: ./sample-app
         run: npm ci
       
+      - name: Run linter
+        working-directory: ./sample-app
+        run: npm run lint
+        continue-on-error: true
+      
       - name: Build application
         working-directory: ./sample-app
         run: npm run build
