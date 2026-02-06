@@ -57,15 +57,15 @@ app.use((req, res) => {
 
 // Error handler
 app.use((err, req, res, _next) => {
-  //console.error(err.stack);
+  // console.error(err.stack);
   res.status(500).json({ error: 'Internal server error' });
 });
 
 // Start server only when run directly (avoid starting during tests)
 if (require.main === module) {
   app.listen(PORT, () => {
-    //console.log(`Server is running on http://localhost:${PORT}`);
-    //console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
+    // console.log(`Server is running on http://localhost:${PORT}`);
+    // console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
   });
 }
 
