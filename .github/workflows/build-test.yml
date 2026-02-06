@@ -31,8 +31,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-          cache-dependency-path: 'sample-app/package-lock.json'
       
       - name: Print environment
         run: |
@@ -84,6 +82,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
+
       
       - working-directory: ./sample-app
         run: npm ci
