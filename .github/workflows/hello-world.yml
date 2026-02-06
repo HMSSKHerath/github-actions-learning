@@ -1,5 +1,5 @@
 # GitHub Actions Workflow: Hello World
-# Test Push and Manual Trigger
+# Test Push Trigger: Push to main or develop branches
 name: Hello World Workflow
 
 on:
