@@ -13,11 +13,11 @@
 
 ### Task 1: Hello World Workflow
 - Screenshot        : ![Task1](./screenshots/Beginner-Task1.png)
-- Workflow run link : https://github.com/HMSSKHerath/github-actions-learning/actions/runs/21708141976
+- Workflow run link : https://github.com/HMSSKHerath/github-actions-learning/actions/runs/21743763008
 
 ### Task 2: Push Trigger
 - Screenshot        : ![Task1](./screenshots/Beginner-Task2.png)
-- Workflow run link : https://github.com/HMSSKHerath/github-actions-learning/actions/runs/21708829578
+- Workflow run link : https://github.com/HMSSKHerath/github-actions-learning/actions/runs/21743926797
 
 ### Task 3: Local Tests
 - Screenshot        : ![Task1](./screenshots/Beginner-Task3.png)
