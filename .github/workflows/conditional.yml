@@ -1,0 +1,18 @@
+# This workflow demonstrates conditional execution based on the branch being pushed to.
+name: Conditional Execution
+
+on:
+  push:
+    branches: [main, develop]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Run deployment (main only)
+        if: github.ref == 'refs/heads/main'
+        run: echo "Deploying to production..."
+      
