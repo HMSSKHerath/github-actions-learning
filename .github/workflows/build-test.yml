@@ -105,3 +105,21 @@ jobs:
           echo "🎯 Test Run Summary"
           echo "==================="
           echo "✅ All tests completed"
+
+  coverage-consumer:
+    name: Coverage Consumer
+    runs-on: ubuntu-latest
+    needs: [build-and-test]
+    if: always()
+    
+    steps:
+      - name: Download coverage artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: coverage-report-18.x
+      
+      - name: Check downloaded files
+        run: |
+          echo "📂 Artifact files:"
+          ls -R
+    
