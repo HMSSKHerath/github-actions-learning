@@ -1,4 +1,4 @@
-# Beginner Badge Submission - sasidu
+# Intermediate Badge Submission - sasidu
 
 **Date:** February 2026
 **Status:** Submitted for Review
