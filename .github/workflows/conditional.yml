@@ -1,3 +1,4 @@
+# This workflow demonstrates conditional execution based on the branch being pushed to.
 name: Conditional Execution
 
 on:
